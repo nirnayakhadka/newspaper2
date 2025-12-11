@@ -246,7 +246,7 @@ const Social = () => {
               </div>
             </div>
 
-            {/* Right Sidebar (재사용) */}
+            {/* Right Sidebar */}
             <div className="lg:w-1/3">
               <div className="lg:sticky lg:top-6 space-y-6">
                 {/* 광고 */}
@@ -264,7 +264,7 @@ const Social = () => {
                   </div>
                 </motion.div>
 
-                {/* 가장 많이 읽힌 기사 위젯 */}
+               
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
