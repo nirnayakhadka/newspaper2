@@ -9,6 +9,7 @@ import ArtsCulture from './pages/ArtsCulture.jsx';
 import Interview from './pages/Interview.jsx';
 import More from './pages/More.jsx';
 import Home from './pages/Home.jsx';
+import Social from './pages/Social.jsx';
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         
             <Route path="/more" element={<More />} />
             <Route path="/" element={<Home/>} />
+            <Route path="social" element={<Social/>}/>
           </Routes>
           </main>
   

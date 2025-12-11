@@ -206,75 +206,9 @@ export default function Mukhya() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       {/* Hero Section */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-slate-900 to-emerald-900 py-12 md:py-16"
-      >
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              मुख्य समाचार
-            </h1>
-            <p className="text-lg md:text-xl text-slate-200 mb-6 max-w-2xl mx-auto">
-              विश्वसनीय र तीव्र समाचारको प्रमुख स्रोत
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-slate-300">
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                १२:४५ PM
-              </span>
-              <span>•</span>
-              <span>कुल समाचार: २८५</span>
-            </div>
-          </motion.div>
-        </div>
-      </motion.div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        {/* Categories Navigation */}
-        <div className="mb-12">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-slate-900">समाचार श्रेणीहरू</h2>
-            <span className="text-slate-600 text-sm">कुल ८ श्रेणीहरू</span>
-          </div>
-          
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category, index) => (
-              <motion.button
-                key={category.name}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setActiveCategory(category.name)}
-                className={`inline-flex items-center gap-2 px-6 py-3.5 rounded-xl transition-all duration-300 ${
-                  activeCategory === category.name
-                    ? 'bg-gradient-to-r from-blue-600 to-emerald-600 text-white shadow-lg'
-                    : 'bg-white text-slate-700 hover:bg-slate-50 shadow-md border border-slate-200'
-                }`}
-              >
-                {category.icon}
-                <span className="font-medium">{category.name}</span>
-                <span className={`text-xs px-2.5 py-1 rounded-full ${
-                  activeCategory === category.name
-                    ? 'bg-white/30'
-                    : category.color.split(' ')[0] + ' ' + category.color.split(' ')[1]
-                }`}>
-                  {category.count}
-                </span>
-              </motion.button>
-            ))}
-          </div>
-        </div>
+
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Main Content - Left (8 columns) */}

@@ -49,15 +49,9 @@ function More() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-indigo-700 to-purple-800 text-white py-6 shadow-2xl">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center tracking-wider">बिबिध खबर</h1>
-          <p className="text-center mt-2 text-indigo-100 text-lg">तपाईंको विश्वसनीय समाचार स्रोत</p>
-        </div>
-      </header>
 
-      <div className="container mx-auto px-4 py-8 lg:py-10">
+
+      <div className="container mx-auto px-6 sm:px-12 lg:px-20 xl:px-32 py-8 lg:py-10">
         {/* Section 1: शीर्ष समाचार */}
         <section className="mb-12 lg:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
